@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_main">
+   <children>
+      <SplitPane dividerPositions="0.1606425702811245" orientation="VERTICAL" prefHeight="500.0" prefWidth="700.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="83.0" prefWidth="698.0">
+               <children>
+                  <Button layoutX="34.0" layoutY="26.0" mnemonicParsing="false" text="Назад" />
+                  <Button fx:id="e" layoutX="612.0" layoutY="26.0" mnemonicParsing="false" onAction="#Exit" text="Вихід" />
+                  <Label alignment="CENTER" layoutX="235.0" layoutY="11.0" prefHeight="56.0" prefWidth="228.0" text="Events" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <DatePicker fx:id="date" layoutX="510.0" layoutY="14.0" promptText="Виберіть дату" />
+                  <Button layoutX="435.0" layoutY="14.0" mnemonicParsing="false" onAction="#search" text="Пошук" />
+                  <Label fx:id="l_notevents" alignment="CENTER" layoutX="448.0" layoutY="64.0" prefHeight="77.0" prefWidth="228.0" text="Подій не буде" textFill="#bcbcbc" visible="false">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="add" alignment="CENTER" layoutX="72.0" layoutY="335.0" mnemonicParsing="false" onAction="#Add" text="Add event" />
+               </children></AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
