@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_list">
+   <children>
+      <SplitPane dividerPositions="0.14859437751004015" layoutY="1.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="700.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button layoutX="616.0" layoutY="23.0" mnemonicParsing="false" onAction="#Exit" text="Вихід" />
+                  <Button layoutX="27.0" layoutY="23.0" mnemonicParsing="false" onAction="#Back" text="Назад" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.29797979797979796" layoutY="14.0" prefHeight="421.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <ListView fx:id="listView" layoutX="2.0" layoutY="47.0" onMouseClicked="#information" prefHeight="419.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5" layoutX="61.0" layoutY="10.0" orientation="VERTICAL" prefHeight="419.0" prefWidth="486.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <items>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <Label fx:id="l_company" alignment="TOP_CENTER" layoutX="119.0" layoutY="8.0" prefHeight="71.0" prefWidth="246.0" textAlignment="RIGHT" wrapText="true">
+                                             <font>
+                                                <Font name="Times New Roman" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="l_address" alignment="TOP_CENTER" layoutX="119.0" layoutY="79.0" prefHeight="42.0" prefWidth="246.0" textAlignment="RIGHT" wrapText="true">
+                                             <font>
+                                                <Font name="Times New Roman" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="l_number" alignment="TOP_CENTER" layoutX="119.0" layoutY="121.0" prefHeight="42.0" prefWidth="246.0" textAlignment="RIGHT" wrapText="true">
+                                             <font>
+                                                <Font name="Times New Roman" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="l_web" alignment="TOP_CENTER" layoutX="119.0" layoutY="163.0" prefHeight="42.0" prefWidth="246.0" textAlignment="RIGHT" wrapText="true">
+                                             <font>
+                                                <Font name="Times New Roman" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="421.0" layoutY="150.0" prefHeight="42.0" prefWidth="49.0" text="Label" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <ScrollPane layoutX="212.0" layoutY="-9.0" prefHeight="205.0" prefWidth="484.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="600.0">
+                                                   <children>
+                                                      <ImageView fitHeight="189.0" fitWidth="469.0" pickOnBounds="true" preserveRatio="true" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
