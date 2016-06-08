@@ -40,7 +40,7 @@ public class Controller_main implements Initializable {
 	static ObservableList<String> list_date;
 	static ArrayList<Integer> a = new ArrayList<Integer>();
 	static String ddate, mdate, ydate;
-	boolean admin = true;
+	boolean admin = false;
     static String date_string;
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

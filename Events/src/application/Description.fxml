@@ -10,7 +10,7 @@
    <children>
       <SplitPane dividerPositions="0.1606425702811245" orientation="VERTICAL" prefHeight="500.0" prefWidth="700.0">
          <items>
-            <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#select" onMouseReleased="#Show" prefHeight="83.0" prefWidth="698.0">
+            <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#select" prefHeight="83.0" prefWidth="698.0">
                <children>
                   <Button fx:id="back" layoutX="34.0" layoutY="26.0" mnemonicParsing="false" onAction="#Back" text="Назад" />
                   <Button fx:id="exit" layoutX="612.0" layoutY="26.0" mnemonicParsing="false" onAction="#Exit" text="Вихід" />

@@ -105,15 +105,7 @@ System.out.println(b);
 		}
 
 	}
-	// public void Show(MouseEvent e) throws IOException {
-	// Scene show = new
-	// Scene(FXMLLoader.load(getClass().getResource("Event.fxml")));
-	// show.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-	// Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-	// app_stage.setScene(show);
-	// app_stage.show();
 
-	// }
 	public void Back(ActionEvent e) throws IOException {
 		Scene back = new Scene(FXMLLoader.load(getClass().getResource("Description.fxml")));
 		back.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
